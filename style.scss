@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
+
+/***************
+variables
+***************/
+$accents: orangered;
+$bodyFont: 'Open Sans', sans-serif;
+$headings: 'Kalam', cursive;
+$gray: #343a40;
+$white: #fff;
+$transition: .4s ease;
+
+/***************
+basics
+***************/
+body {
+    font-family: $bodyFont;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headings;
+}
+a {
+    font-family: $headings;
+    transition: $transition;
+}
+
+/***************
+navbar
+***************/
+.bg-dark {
+    background: $gray !important;
+    .navbar-brand {
+        font-size: 1.7rem;
+        &:hover {
+            color: $accents;
+        }
+    }
+    .nav-link {
+        color: $accents !important;
+        transition: $transition;
+        margin-left: 40px;
+        font-size: 1.2rem;
+        &:hover {
+            color: $white !important;
+        }
+    }
+}
