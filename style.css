@@ -3,10 +3,14 @@
 variables
 ***************/
 /***************
+mixins
+***************/
+/***************
 basics
 ***************/
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,6 +42,176 @@ navbar
 }
 .bg-dark .nav-link:hover {
   color: #fff !important;
+}
+
+/***************
+header
+***************/
+header {
+  background-image: url(img/header.jpg);
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header .box {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
+header .box .card {
+  border: 2px solid #343a40;
+  border-radius: 0;
+  background: #fff;
+  opacity: 0.7;
+}
+header .box .card .card-title {
+  color: orangered;
+}
+header .box .card .card-text h4:first-child {
+  font-size: 1.2rem;
+}
+header .box .card .button {
+  background: orangered;
+  padding: 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px auto;
+  font-size: 1.3rem;
+}
+
+/***************
+interests
+***************/
+#interests {
+  padding: 80px 0;
+}
+#interests .title h2 {
+  text-align: center;
+  font-size: 5rem;
+}
+#interests .title h2::after {
+  content: "";
+  display: block;
+  height: 8px;
+  background: orangered;
+  border: none;
+  width: 10%;
+  margin: auto;
+}
+#interests .card {
+  position: relative;
+}
+#interests .card .holder {
+  overflow: hidden;
+}
+#interests .card .holder img {
+  transition: 0.4s ease;
+}
+#interests .card .holder img:hover {
+  transform: scale(1.3);
+}
+#interests .card .cornerText {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: orangered;
+  padding: 10px;
+  opacity: 0.9;
+}
+#interests .card .cornerText h5 {
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+#interests .card .card-body .card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+#interests .card .card-body .card-title::after {
+  content: "";
+  display: block;
+  height: 7px;
+  background: orangered;
+  border: none;
+  width: 10%;
+  margin: 20px auto 30px auto;
+}
+
+/***************
+skills
+***************/
+#skills {
+  background: #000;
+}
+#skills .title h2 {
+  text-align: center;
+  font-size: 5rem;
+}
+#skills .title h2::after {
+  content: "";
+  display: block;
+  height: 8px;
+  background: orangered;
+  border: none;
+  width: 10%;
+  margin: auto;
+}
+#skills i {
+  font-size: 5rem;
+  background: orangered;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+/***************
+portfolio
+***************/
+#portfolio .title h2 {
+  text-align: center;
+  font-size: 5rem;
+}
+#portfolio .title h2::after {
+  content: "";
+  display: block;
+  height: 8px;
+  background: orangered;
+  border: none;
+  width: 10%;
+  margin: auto;
+}
+#portfolio .holder {
+  overflow: hidden;
+}
+#portfolio .holder img {
+  transition: 0.4s ease;
+}
+#portfolio .holder img:hover {
+  transform: scale(1.3);
+}
+
+/***************
+contact
+***************/
+#contact {
+  background: orangered;
+  color: #fff;
+}
+#contact .title h2 {
+  text-align: center;
+  font-size: 5rem;
+}
+#contact .title h2::after {
+  content: "";
+  display: block;
+  height: 8px;
+  background: orangered;
+  border: none;
+  width: 10%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
