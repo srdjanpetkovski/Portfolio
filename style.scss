@@ -214,4 +214,16 @@ contact
             @include h2;
         }
     }
+    a {
+        .fab {
+            color: $white;
+            font-size: 1.3rem;
+            margin-right: 15px;
+            transition: $transition;
+            &:hover {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+    
 }
